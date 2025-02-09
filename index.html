@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kullanıcı Uygulamaları</title>
+</head>
+<body>
+    <div class="container" id="auth-container">
+        <h2>🔑 Kullanıcı Girişi</h2>
+        <input type="text" id="username" placeholder="Kullanıcı Adı">
+        <input type="password" id="password" placeholder="Şifre">
+        <button id="login-button">🚀 Giriş Yap</button>
+        <p>Hesabın yok mu? <a href="#" id="show-register">Kayıt Ol</a></p>
+    </div>
+    
+    <div class="container" id="register-container" style="display: none;">
+        <h2>📝 Kayıt Ol</h2>
+        <input type="text" id="new-username" placeholder="Kullanıcı Adı">
+        <input type="password" id="new-password" placeholder="Şifre">
+        <button id="register-button">📝 Kayıt Ol</button>
+        <p>Zaten hesabın var mı? <a href="#" id="show-login">Giriş Yap</a></p>
+    </div>
+    
+    <div class="app-container" id="app-section">
+        <div class="nav-buttons">
+            <button id="show-countdown">⏳ Geri Sayım</button>
+            <button id="show-todo">✅ Yapılacaklar</button>
+            <button id="show-timer">⏱️ Sayaç</button>
+            <button id="logout-button">🚪 Çıkış Yap</button>
+        </div>
+        <div class="app-box" id="countdown-container">
+            <h2>⏳ Geri Sayım</h2>
+            <input type="datetime-local" id="datetime-picker">
+            <button id="start-button">Başlat</button>
+            <div id="countdown-display">Tarih seç ve başlat.</div>
+        </div>
+        <div class="app-box" id="todo-container">
+            <h2>✅ Yapılacaklar Listesi</h2>
+            <input type="text" id="task-input" placeholder="Görev ekle">
+            <button id="add-task">Ekle</button>
+            <ul id="task-list"></ul>
+        </div>
+        <div class="app-box" id="timer-container">
+            <h2>⏱️ Sayaç</h2>
+            <button id="start-timer">Başlat</button>
+            <button id="stop-timer">Durdur</button>
+            <button id="save-timer">💾 Kaydet</button>
+            <div id="timer-display">00:00</div>
+        </div>
+    </div>
+    
+    <div>
+        <p>bu proje bertan örüç tarafında gelişimi devam etmektedir.</p>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
